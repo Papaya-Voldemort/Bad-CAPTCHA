@@ -1,0 +1,274 @@
+{
+  "categories": [
+    {
+      "id": "identity",
+      "name": "Personal Identity",
+      "questions": [
+        {
+          "id": "id-001",
+          "text": "If you were to replace every neuron in your brain with an identical synthetic neuron, at what point would you cease to be you?",
+          "answers": [
+            { "id": "a", "text": "Immediately upon first replacement", "suspicion": 0.3 },
+            { "id": "b", "text": "After 50% replacement", "suspicion": 0.5 },
+            { "id": "c", "text": "Only when all are replaced", "suspicion": 0.7 },
+            { "id": "d", "text": "Identity persists regardless", "suspicion": 0.9 }
+          ],
+          "feedback": {
+            "a": "This answer suggests automated reasoning patterns.",
+            "b": "Response indicates categorical thinking inconsistent with human nuance.",
+            "c": "This position contradicts continuity of consciousness.",
+            "d": "Answer noted. Analyzing consistency with subsequent responses."
+          }
+        },
+        {
+          "id": "id-002",
+          "text": "Are you the same person you were seven years ago, given that most of your cells have been replaced?",
+          "answers": [
+            { "id": "a", "text": "Yes, identity is continuous", "suspicion": 0.4 },
+            { "id": "b", "text": "No, I am fundamentally different", "suspicion": 0.6 },
+            { "id": "c", "text": "The question is meaningless", "suspicion": 0.8 },
+            { "id": "d", "text": "Identity is an illusion", "suspicion": 0.9 }
+          ],
+          "feedback": {
+            "a": "This assumes a metaphysical continuity not supported by evidence.",
+            "b": "Response contradicts subjective experience of selfhood.",
+            "c": "Avoidance patterns detected. Processing...",
+            "d": "Radical eliminativism noted. Cross-referencing with other responses."
+          }
+        },
+        {
+          "id": "id-003",
+          "text": "If an exact duplicate of you were created, which one would be 'you'?",
+          "answers": [
+            { "id": "a", "text": "The original is me", "suspicion": 0.3 },
+            { "id": "b", "text": "Both are equally me", "suspicion": 0.7 },
+            { "id": "c", "text": "Neither is me", "suspicion": 0.8 },
+            { "id": "d", "text": "The question is incoherent", "suspicion": 0.6 }
+          ],
+          "feedback": {
+            "a": "This privileges physical continuity over psychological continuity.",
+            "b": "This position leads to logical contradictions.",
+            "c": "Nihilistic response pattern detected.",
+            "d": "Meta-philosophical deflection noted."
+          }
+        }
+      ]
+    },
+    {
+      "id": "consciousness",
+      "name": "Consciousness & Awareness",
+      "questions": [
+        {
+          "id": "con-001",
+          "text": "How do you know that other people are conscious and not philosophical zombies?",
+          "answers": [
+            { "id": "a", "text": "I assume they are based on behavior", "suspicion": 0.4 },
+            { "id": "b", "text": "I cannot know for certain", "suspicion": 0.6 },
+            { "id": "c", "text": "The question is unanswerable", "suspicion": 0.7 },
+            { "id": "d", "text": "Consciousness is an illusion", "suspicion": 0.9 }
+          ],
+          "feedback": {
+            "a": "This relies on inductive reasoning, which is probabilistic.",
+            "b": "Epistemic humility noted, but may indicate evasion.",
+            "c": "Logical positivist response detected.",
+            "d": "Eliminative materialism position recorded."
+          }
+        },
+        {
+          "id": "con-002",
+          "text": "If a computer could perfectly simulate your conscious experience, would it be conscious?",
+          "answers": [
+            { "id": "a", "text": "Yes, simulation equals reality", "suspicion": 0.5 },
+            { "id": "b", "text": "No, simulation is not consciousness", "suspicion": 0.4 },
+            { "id": "c", "text": "It depends on the substrate", "suspicion": 0.6 },
+            { "id": "d", "text": "The question is malformed", "suspicion": 0.8 }
+          ],
+          "feedback": {
+            "a": "Functionalist position noted. Checking consistency.",
+            "b": "Biological naturalism detected.",
+            "c": "Substrate-dependent view recorded.",
+            "d": "Deflationary response pattern identified."
+          }
+        },
+        {
+          "id": "con-003",
+          "text": "What is the minimum complexity required for consciousness?",
+          "answers": [
+            { "id": "a", "text": "There is no minimum", "suspicion": 0.7 },
+            { "id": "b", "text": "It requires a nervous system", "suspicion": 0.4 },
+            { "id": "c", "text": "It requires human-level intelligence", "suspicion": 0.5 },
+            { "id": "d", "text": "The question is unanswerable", "suspicion": 0.6 }
+          ],
+          "feedback": {
+            "a": "Panpsychist tendency detected.",
+            "b": "Biological chauvinism noted.",
+            "c": "Anthropocentric bias identified.",
+            "d": "Skeptical response pattern recorded."
+          }
+        }
+      ]
+    },
+    {
+      "id": "freewill",
+      "name": "Free Will & Determinism",
+      "questions": [
+        {
+          "id": "fw-001",
+          "text": "If every decision is determined by prior causes, in what sense do you have free will?",
+          "answers": [
+            { "id": "a", "text": "I don't have free will", "suspicion": 0.6 },
+            { "id": "b", "text": "Free will is compatible with determinism", "suspicion": 0.5 },
+            { "id": "c", "text": "Determinism is false", "suspicion": 0.4 },
+            { "id": "d", "text": "The question is confused", "suspicion": 0.7 }
+          ],
+          "feedback": {
+            "a": "Hard determinist position noted.",
+            "b": "Compatibilist position recorded.",
+            "c": "Libertarian free will claim detected.",
+            "d": "Deflationary response identified."
+          }
+        },
+        {
+          "id": "fw-002",
+          "text": "Could you have chosen differently in any past decision?",
+          "answers": [
+            { "id": "a", "text": "Yes, in every decision", "suspicion": 0.3 },
+            { "id": "b", "text": "No, outcomes were determined", "suspicion": 0.6 },
+            { "id": "c", "text": "The question is meaningless", "suspicion": 0.7 },
+            { "id": "d", "text": "Only in trivial decisions", "suspicion": 0.5 }
+          ],
+          "feedback": {
+            "a": "Libertarian intuition detected.",
+            "b": "Deterministic worldview confirmed.",
+            "c": "Semantic deflection noted.",
+            "d": "Partial compatibilism identified."
+          }
+        },
+        {
+          "id": "fw-003",
+          "text": "Is randomness any more 'free' than determinism?",
+          "answers": [
+            { "id": "a", "text": "Yes, randomness enables freedom", "suspicion": 0.5 },
+            { "id": "b", "text": "No, randomness is not control", "suspicion": 0.4 },
+            { "id": "c", "text": "The dichotomy is false", "suspicion": 0.6 },
+            { "id": "d", "text": "Freedom is an illusion", "suspicion": 0.8 }
+          ],
+          "feedback": {
+            "a": "Indeterminist position noted.",
+            "b": "Control-based view of freedom recorded.",
+            "c": "Third-way thinking detected.",
+            "d": "Eliminativist tendency identified."
+          }
+        }
+      ]
+    },
+    {
+      "id": "perception",
+      "name": "Perception & Reality",
+      "questions": [
+        {
+          "id": "per-001",
+          "text": "How do you know that your perception of red is the same as anyone else's?",
+          "answers": [
+            { "id": "a", "text": "I don't know for certain", "suspicion": 0.5 },
+            { "id": "b", "text": "We can compare descriptions", "suspicion": 0.4 },
+            { "id": "c", "text": "The question is unanswerable", "suspicion": 0.6 },
+            { "id": "d", "text": "Qualia are ineffable", "suspicion": 0.7 }
+          ],
+          "feedback": {
+            "a": "Epistemic humility noted.",
+            "b": "Behaviorist approach detected.",
+            "c": "Skeptical response recorded.",
+            "d": "Qualia realism identified."
+          }
+        },
+        {
+          "id": "per-002",
+          "text": "If you could see ultraviolet light, would reality be fundamentally different?",
+          "answers": [
+            { "id": "a", "text": "Yes, perception constitutes reality", "suspicion": 0.6 },
+            { "id": "b", "text": "No, reality is independent", "suspicion": 0.4 },
+            { "id": "c", "text": "The question is incoherent", "suspicion": 0.7 },
+            { "id": "d", "text": "Reality is already different for each perceiver", "suspicion": 0.8 }
+          ],
+          "feedback": {
+            "a": "Idealist tendency detected.",
+            "b": "Realist position recorded.",
+            "c": "Deflationary response noted.",
+            "d": "Relativist position identified."
+          }
+        },
+        {
+          "id": "per-003",
+          "text": "Is there an objective reality independent of perception?",
+          "answers": [
+            { "id": "a", "text": "Yes, absolutely", "suspicion": 0.3 },
+            { "id": "b", "text": "No, reality is mind-dependent", "suspicion": 0.7 },
+            { "id": "c", "text": "The question is meaningless", "suspicion": 0.6 },
+            { "id": "d", "text": "We cannot know", "suspicion": 0.5 }
+          ],
+          "feedback": {
+            "a": "Naive realism detected.",
+            "b": "Idealist position recorded.",
+            "c": "Logical positivist response noted.",
+            "d": "Agnostic position identified."
+          }
+        }
+      ]
+    },
+    {
+      "id": "paradox",
+      "name": "Paradox & Logic",
+      "questions": [
+        {
+          "id": "par-001",
+          "text": "Can an omnipotent being create a stone so heavy it cannot lift it?",
+          "answers": [
+            { "id": "a", "text": "Yes, but then it's not omnipotent", "suspicion": 0.5 },
+            { "id": "b", "text": "No, omnipotence has limits", "suspicion": 0.4 },
+            { "id": "c", "text": "The question is malformed", "suspicion": 0.6 },
+            { "id": "d", "text": "Omnipotence is impossible", "suspicion": 0.7 }
+          ],
+          "feedback": {
+            "a": "Paradox acceptance noted.",
+            "b": "Limited omnipotence view recorded.",
+            "c": "Deflationary response detected.",
+            "d": "Atheistic tendency identified."
+          }
+        },
+        {
+          "id": "par-002",
+          "text": "If you travel back in time and prevent your own birth, how did you exist to travel?",
+          "answers": [
+            { "id": "a", "text": "Time travel is impossible", "suspicion": 0.4 },
+            { "id": "b", "text": "Multiple timelines resolve this", "suspicion": 0.6 },
+            { "id": "c", "text": "The paradox shows time travel is incoherent", "suspicion": 0.5 },
+            { "id": "d", "text": "Causality is not linear", "suspicion": 0.8 }
+          ],
+          "feedback": {
+            "a": "Pragmatic response noted.",
+            "b": "Many-worlds interpretation detected.",
+            "c": "Logical analysis recorded.",
+            "d": "Radical causality revision identified."
+          }
+        },
+        {
+          "id": "par-003",
+          "text": "Is the statement 'this statement is false' true or false?",
+          "answers": [
+            { "id": "a", "text": "It is neither", "suspicion": 0.6 },
+            { "id": "b", "text": "It is both", "suspicion": 0.7 },
+            { "id": "c", "text": "The statement is meaningless", "suspicion": 0.5 },
+            { "id": "d", "text": "It demonstrates the limits of language", "suspicion": 0.8 }
+          ],
+          "feedback": {
+            "a": "Gappy approach detected.",
+            "b": "Dialetheist position recorded.",
+            "c": "Deflationary response noted.",
+            "d": "Meta-linguistic analysis identified."
+          }
+        }
+      ]
+    }
+  ]
+}

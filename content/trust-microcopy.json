@@ -1,0 +1,58 @@
+{
+  "widget_footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "verification_id": "Verification ID: #{id}",
+    "expires_in": "Verification expires in {time}",
+    "refresh": "Refresh challenge"
+  },
+  "expanded_footer": {
+    "advanced_review": "Advanced Review Enabled",
+    "session_integrity": "Session Integrity: Verified",
+    "human_review": "Human review panel consulted",
+    "checkpoint": "Checkpoint {n} of 3"
+  },
+  "legal": {
+    "service_text": "This verification is provided by Philosophical Identity Services",
+    "data_notice": "Response patterns may be analyzed for verification purposes",
+    "disclaimer": "Verification does not guarantee identity confirmation"
+  },
+  "widget_title": {
+    "default": "I'm not a robot",
+    "verifying": "Verifying...",
+    "verified": "Verified"
+  },
+  "expanded_title": {
+    "default": "Identity Verification Required",
+    "processing": "Verification in Progress",
+    "almost_verified": "Almost Verified",
+    "revoked": "Verification Revoked"
+  },
+  "expanded_subtitle": {
+    "default": "Session #{id} · Advanced Review Enabled",
+    "processing": "Session #{id} · Processing",
+    "completed": "Session #{id} · Verified"
+  },
+  "question_counter": {
+    "default": "Question {current} of {total}",
+    "checkpoint": "Advanced review checkpoint {n} of 3"
+  },
+  "progress": {
+    "label": "Verification Progress",
+    "percentage": "{percent}%",
+    "checkpoint": "Checkpoint {n} of 3"
+  },
+  "timer": {
+    "expires_in": "Verification expires in {time}",
+    "expired": "Verification expired"
+  },
+  "audio_challenge": {
+    "label": "Audio challenge",
+    "disabled": "Audio challenge unavailable"
+  },
+  "session_info": {
+    "advanced_review": "Advanced Review Enabled",
+    "session_integrity": "Session Integrity: Verified",
+    "human_review": "Human review panel consulted"
+  }
+}

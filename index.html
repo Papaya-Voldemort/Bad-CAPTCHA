@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Identity Verification System">
+  <title>Identity Verification</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/widget.css">
+  <link rel="stylesheet" href="styles/philosophy.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  
+  <!-- Favicon (inline SVG for simplicity) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%234285f4' d='M16 2L4 8v8c0 7.18 5.12 13.88 12 16 6.88-2.12 12-8.82 12-16V8L16 2zm0 14.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E">
+</head>
+<body>
+  <main class="captcha-container" role="main">
+    <!-- Widget Card -->
+    <div class="widget-card" id="widget-card" role="region" aria-label="Identity verification widget">
+      <!-- Main Widget Content -->
+      <div class="widget-content">
+        <!-- Checkbox Area -->
+        <div class="checkbox-area" id="checkbox-area" tabindex="0" role="checkbox" aria-checked="false" aria-label="Verify you are not a robot">
+          <input type="checkbox" class="checkbox-input" id="captcha-checkbox" aria-hidden="true">
+          <div class="checkbox-visual" id="checkbox-visual">
+            <svg class="checkmark-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="spinner-container" id="spinner-container" aria-hidden="true">
+            <svg class="spinner-icon" viewBox="0 0 24 24" aria-label="Loading">
+              <circle class="spinner-circle" cx="12" cy="12" r="10"></circle>
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Text Area -->
+        <div class="text-area">
+          <h2 class="widget-title" id="widget-title">I'm not a robot</h2>
+        </div>
+        
+        <!-- Icon Area (Shield) -->
+        <div class="icon-area">
+          <svg class="shield-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1 14.5v-5l-3.5 3.5-1.42-1.42L12 8.58l5.92 5.92-1.42 1.42L13 11.5v5h-2z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Progress Bar -->
+      <div class="progress-container" id="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      
+      <!-- Widget Footer -->
+      <div class="widget-footer" id="widget-footer">
+        <div class="footer-links">
+          <a href="#" class="footer-link" id="privacy-link" aria-label="Privacy policy">Privacy</a>
+          <a href="#" class="footer-link" id="terms-link" aria-label="Terms of service">Terms</a>
+        </div>
+        <span class="verification-id" id="verification-id" aria-live="polite">Verification ID: #7X9K2M</span>
+      </div>
+    </div>
+    
+    <!-- Status Text (below widget) -->
+    <div class="status-container" id="status-container" aria-live="polite" aria-atomic="true">
+      <p class="status-text" id="status-text"></p>
+    </div>
+    
+    <!-- Expanded Content (hidden initially) -->
+    <div class="expanded-content" id="expanded-content" style="display: none;">
+      <!-- Expanded Header -->
+      <div class="expanded-header" id="expanded-header">
+        <svg class="checkmark-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+          <h2 class="expanded-title" id="expanded-title">Identity Verification Required</h2>
+          <p class="expanded-subtitle" id="expanded-subtitle">Session #7X9K2M · Advanced Review Enabled</p>
+        </div>
+      </div>
+      
+      <!-- Philosophy Content -->
+      <div class="philosophy-content" id="philosophy-content">
+        <!-- Question Section -->
+        <div class="question-section" id="question-section">
+          <p class="question-counter" id="question-counter">Question 1 of 3</p>
+          <div class="question-divider"></div>
+          <p class="question-text" id="question-text"></p>
+        </div>
+        
+        <!-- Answers Section -->
+        <div class="answers-section" id="answers-section" role="group" aria-label="Answer options">
+          <!-- Answers will be dynamically inserted here -->
+        </div>
+        
+        <!-- Feedback Container -->
+        <div class="feedback-container" id="feedback-container" role="alert" aria-live="polite">
+          <p class="feedback-text" id="feedback-text"></p>
+        </div>
+        
+        <!-- Progress Section -->
+        <div class="progress-section" id="progress-section">
+          <div class="progress-header">
+            <span class="progress-label">Verification Progress</span>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <p class="checkpoint-info" id="checkpoint-info"></p>
+        </div>
+        
+        <!-- Legal Disclaimer -->
+        <div class="legal-disclaimer" id="legal-disclaimer">
+          <p>This verification is provided by Philosophical Identity Services.</p>
+          <p>Response patterns may be analyzed for verification purposes.</p>
+          <p>Verification does not guarantee identity confirmation.</p>
+        </div>
+      </div>
+      
+      <!-- Revocation Container (hidden initially) -->
+      <div class="revocation-container" id="revocation-container" style="display: none;">
+        <svg class="revocation-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        <h2 class="revocation-title" id="revocation-title">Verification Revoked</h2>
+        <p class="revocation-text" id="revocation-text">Identity ambiguity detected. Metaphysical coherence insufficient for verification.</p>
+        <div class="revocation-explanation" id="revocation-explanation">
+          <p>Your responses indicated patterns inconsistent with human philosophical reasoning. This session has been terminated.</p>
+        </div>
+      </div>
+      
+      <!-- Almost Verified Container (hidden initially) -->
+      <div class="almost-verified-container" id="almost-verified-container" style="display: none;">
+        <svg class="almost-verified-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1 14.5v-5l-3.5 3.5-1.42-1.42L12 8.58l5.92 5.92-1.42 1.42L13 11.5v5h-2z"/>
+        </svg>
+        <h2 class="almost-verified-title" id="almost-verified-title">Almost Verified</h2>
+        <p class="almost-verified-text" id="almost-verified-text">Finalizing verification...</p>
+      </div>
+      
+      <!-- Reset Container (hidden initially) -->
+      <div class="reset-container" id="reset-container" style="display: none;">
+        <p class="reset-text" id="reset-text">Session refreshed</p>
+      </div>
+      
+      <!-- Expanded Footer -->
+      <div class="expanded-footer" id="expanded-footer">
+        <div class="expanded-footer-left">
+          <span class="timer" id="timer" aria-live="polite">Verification expires in 5:00</span>
+          <a href="#" class="refresh-link" id="refresh-link" aria-label="Refresh challenge">Refresh challenge</a>
+        </div>
+        <div class="session-info">
+          <span class="session-info-item">Advanced Review Enabled</span>
+          <span class="session-info-item">Session Integrity: Verified</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Audio Challenge Stub (disabled) -->
+    <div class="audio-challenge-stub" id="audio-challenge-stub" aria-disabled="true" tabindex="-1">
+      <svg class="audio-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+      <span>Audio challenge</span>
+    </div>
+  </main>
+  
+  <!-- JavaScript Modules -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

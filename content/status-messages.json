@@ -1,0 +1,66 @@
+{
+  "verifying": [
+    "Analyzing behavioral patterns...",
+    "Checking interaction signatures...",
+    "Verifying human characteristics...",
+    "Processing verification data...",
+    "Analyzing response patterns..."
+  ],
+  "escalating": [
+    "Advanced verification required",
+    "Identity confirmation needed",
+    "Philosophical verification enabled",
+    "Enhanced verification protocol activated",
+    "Multi-factor identity check initiated"
+  ],
+  "processing": [
+    "Cross-referencing responses...",
+    "Consulting verification database...",
+    "Analyzing metaphysical coherence...",
+    "Advanced review checkpoint {n} of 3",
+    "Verifying philosophical consistency...",
+    "Human review panel consulted...",
+    "Processing identity parameters...",
+    "Evaluating response authenticity..."
+  ],
+  "almost_verified": [
+    "Almost Verified",
+    "Finalizing verification...",
+    "Identity confirmation in progress...",
+    "Verification nearly complete...",
+    "Final identity check in progress..."
+  ],
+  "revoked": [
+    "Verification revoked",
+    "Identity ambiguity detected",
+    "Metaphysical coherence insufficient",
+    "Session integrity compromised",
+    "Verification terminated",
+    "Identity confirmation failed"
+  ],
+  "reset": [
+    "Session refreshed",
+    "New verification initiated",
+    "Challenge updated",
+    "Verification reset",
+    "New session started"
+  ],
+  "timing_suspicion": [
+    "Response time inconsistent with human deliberation",
+    "Processing speed exceeds expected human parameters",
+    "Response cadence suggests automated patterns",
+    "Timing analysis indicates non-human behavior"
+  ],
+  "consistency_suspicion": [
+    "This contradicts your previous philosophical position",
+    "Inconsistency detected in response patterns",
+    "Philosophical position inconsistency detected",
+    "Response contradicts earlier statements"
+  ],
+  "automated_suspicion": [
+    "This answer suggests automated reasoning patterns",
+    "Response pattern consistent with algorithmic generation",
+    "Automated response signature detected",
+    "Non-human reasoning pattern identified"
+  ]
+}
